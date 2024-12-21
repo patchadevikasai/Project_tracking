@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Ensures full-screen height */
+}
+
+.App {
+    text-align: center;
+    margin: 0;  /* Removed any margin for overall compactness */
+    width: 100%;
+    max-width: 800px;  /* Max width to prevent it from becoming too wide */
+}
+
+h1 {
+    font-size: 2.5rem;  /* Increased font size */
+    color: #2196F3;  /* Blue color for h1 */
+    margin-bottom:5px;  /* Adjusted margin */
+}
+
+h2 {
+    font-size: 1.8rem;  /* Increased font size */
+    color: #e43201;  /* Orange color for h2 */
+    margin-bottom: 10px;  /* Adjusted margin */
+}
+
+h3 {
+    font-size: 1.5rem;  /* Increased font size */
+    color: #0539c9;  /* Green color for h3 */
+    margin-bottom: 8px;  /* Adjusted margin */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 1rem;  /* Increased font size */
+    color: #888;
+}
+
+/* List and Project Cards */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #ffffff;
+    margin-bottom: 6px;  /* Decreased margin */
+    padding: 10px;  /* Decreased padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1.2rem;  /* Increased font size inside the box */
+}
+
+p {
+    font-size: 1.1rem;  /* Increased font size */
+    color: #666;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 6px;
+    height: 12px;  /* Increased height of the progress bar container */
+    margin-bottom: 8px;  /* Adjusted bottom margin */
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #2196F3;  /* Blue color for progress */
+    transition: width 0.3s ease;
+}
+
+/* Status Badge */
+.status {
+    font-weight: bold;
+    margin-top: 8px;  /* Increased margin */
+}
+
+.status.completed {
+    color: #4caf50;
+}
+
+.status.in-progress {
+    color: #ff9800;
+}
+
+.status.not-started {
+    color: #9e9e9e;
+}
+
+/* Button Styles */
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;  /* Increased padding */
+    border-radius: 5px;
+    font-size: 1.1rem;  /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;  /* Increased margin */
+    margin-right: 10px;  /* Increased margin */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Score Display */
+.score {
+    font-size: 1.3rem;  /* Increased font size */
+    font-weight: bold;
+    margin-top: 10px;  /* Increased margin */
+    color: #3e3e3e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .App {
+        margin: 5px;  /* Even smaller margin */
+        padding: 7px;
+    }
+
+    h1 {
+        font-size: 2.5rem;  /* Adjusted for mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem;  /* Increased on mobile */
+    }
+
+    li {
+        padding: 8px;  /* Adjusted padding */
+        font-size: 1.1rem;  /* Increased font size for mobile */
+    }
+
+    button {
+        padding: 7px 12px;  /* Increased button size */
+        font-size: 1.1rem;  /* Increased font size */
+    }
+}
